@@ -67,11 +67,21 @@ const ContactModal = () => {
         style={customStyles}
         contentLabel="Us Contact"
       >
-        <button onClick={closeModal}>close</button>
+        <button
+          onClick={closeModal}
+          style={{
+            backgroundColor: "#46139f",
+          }}
+        >
+          close
+        </button>
         <button
           onClick={() => {
             setUsContact(false);
             setAllContact(true);
+          }}
+          style={{
+            backgroundColor: "#46139f",
           }}
         >
           All Contacts
@@ -80,6 +90,9 @@ const ContactModal = () => {
           onClick={() => {
             setAllContact(false);
             setUsContact(true);
+          }}
+          style={{
+            backgroundColor: "#ff7f50",
           }}
         >
           Us Contacts
