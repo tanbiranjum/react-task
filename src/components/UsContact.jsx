@@ -36,6 +36,17 @@ const UsContacts = () => {
               <tr key={index}>
                 <td>{contact.country.name}</td>
                 <td>{contact.phone}</td>
+                <td>
+                  <button
+                    onClick={() => {
+                      alert(
+                        `Country ${contact.country.name} and Number ${contact.phone}}`
+                      );
+                    }}
+                  >
+                    Details
+                  </button>
+                </td>
               </tr>
             );
           })}
